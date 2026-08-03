@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" role="img" aria-label="M VAMSI KRISHNA - AI Infrastructure Engineer">
+  <defs>
+    <style>
+      @keyframes pulse { 0%,100% {opacity:1} 50% {opacity:0.3} }
+      @keyframes blink { 0%,100% {opacity:1} 50% {opacity:0} }
+      @keyframes fadeIn { from {opacity:0} to {opacity:1} }
+      .terminal-bg { fill: #F8FAFC; }
+      .portrait-frame { fill: none; stroke: #0891B2; stroke-width: 2; rx: 8; }
+      .info-panel { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; }
+      .header { fill: #0891B2; font-size: 13px; font-weight: 600; }
+      .row-label { fill: #475569; font-size: 14px; }
+      .row-value { fill: #0F172A; font-size: 14px; }
+      .live-badge { fill: #EF4444; font-size: 12px; font-weight: 700; animation: pulse 1.5s ease-in-out infinite; }
+      .handle-pill { fill: #10B981; font-size: 14px; font-weight: 600; }
+      .dot { fill: #7C3AED; }
+      .logo-traveller { fill: #0891B2; }
+    </style>
+  </defs>
+  
+  <!-- Terminal background (light) -->
+  <rect class="terminal-bg" width="1180" height="610"/>
+  
+  <!-- Title bar -->
+  <rect x="0" y="0" width="1180" height="36" fill="#E2E8F0"/>
+  <text x="16" y="24" class="header">profile.sh --live</text>
+  <circle cx="1140" cy="18" r="6" fill="#EF4444" class="live-badge" style="animation-delay:0s"/>
+  <text x="1020" y="24" class="handle-pill" style="paint-order: stroke fill; stroke:#F8FAFC; stroke-width:3px">@Mylavamsikrishna123</text>
+  
+  <!-- Portrait frame (left ~38%) -->
+  <rect x="20" y="56" width="430" height="534" class="portrait-frame"/>
+  <text x="40" y="84" class="header" style="fill:#0891B2">VISUAL.MAP</text>
+  
+  <!-- Dithered portrait placeholder (animated dots) -->
+  <g id="portrait-dots">
+    <rect x="40" y="100" width="390" height="470" fill="none"/>
+    <g style="animation: fadeIn 3.2s ease-out forwards">
+      <circle class="dot" cx="100" cy="180" r="1.5" style="animation-delay:0.1s"/>
+      <circle class="dot" cx="105" cy="180" r="1.5" style="animation-delay:0.15s"/>
+      <circle class="dot" cx="110" cy="180" r="1.5" style="animation-delay:0.2s"/>
+      <circle class="dot" cx="115" cy="180" r="1.5" style="animation-delay:0.25s"/>
+      <circle class="dot" cx="100" cy="185" r="1.5" style="animation-delay:0.12s"/>
+      <circle class="dot" cx="105" cy="185" r="1.5" style="animation-delay:0.18s"/>
+      <circle class="dot" cx="110" cy="185" r="1.5" style="animation-delay:0.22s"/>
+      <circle class="dot" cx="115" cy="185" r="1.5" style="animation-delay:0.28s"/>
+      <circle class="dot" cx="100" cy="190" r="1.5" style="animation-delay:0.14s"/>
+      <circle class="dot" cx="105" cy="190" r="1.5" style="animation-delay:0.19s"/>
+      <circle class="dot" cx="110" cy="190" r="1.5" style="animation-delay:0.24s"/>
+      <circle class="dot" cx="115" cy="190" r="1.5" style="animation-delay:0.3s"/>
+    </g>
+  </g>
+  
+  <!-- Logo travellers layer -->
+  <g id="logo-travellers" style="opacity:0; animation: fadeIn 2s 3.5s forwards">
+    <text x="235" y="350" class="logo-traveller" font-size="48" text-anchor="middle" style="font-family: 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;">🔥</text>
+    <animate attributeName="opacity" values="0;0;0;1;1;1;0" dur="14.2s" repeatCount="indefinite" keyTimes="0;0.21;0.35;0.5;0.64;0.79;1"/>
+    <animate attributeName="x" values="235;200;165;130;165;200;235" dur="14.2s" repeatCount="indefinite" keyTimes="0;0.21;0.35;0.5;0.64;0.79;1"/>
+    <animate attributeName="y" values="350;320;290;260;290;320;350" dur="14.2s" repeatCount="indefinite" keyTimes="0;0.21;0.35;0.5;0.64;0.79;1"/>
+  </g>
+  
+  <!-- Info panel (right side) -->
+  <g class="info-panel" transform="translate(470, 56)">
+    <text x="0" y="0" class="header">SYSTEM.INFO</text>
+    
+    <g transform="translate(0, 30)">
+      <text x="0" y="0" class="row-label">Subject</text>
+      <text x="120" y="0" class="row-value">M VAMSI KRISHNA</text>
+    </g>
+    <g transform="translate(0, 53)">
+      <text x="0" y="0" class="row-label">Role</text>
+      <text x="120" y="0" class="row-value">AI Infrastructure Engineer</text>
+    </g>
+    <g transform="translate(0, 76)">
+      <text x="0" y="0" class="row-label">Origin</text>
+      <text x="120" y="0" class="row-value">India</text>
+    </g>
+    <g transform="translate(0, 99)">
+      <text x="0" y="0" class="row-label">Education</text>
+      <text x="120" y="0" class="row-value">M.Tech</text>
+    </g>
+    <g transform="translate(0, 122)">
+      <text x="0" y="0" class="row-label">Status</text>
+      <text x="120" y="0" class="row-value">Building + Learning + Shipping</text>
+    </g>
+    <g transform="translate(0, 145)">
+      <text x="0" y="0" class="row-label">ToolChain</text>
+      <text x="120" y="0" class="row-value">VS Code, Git, Docker</text>
+    </g>
+    <g transform="translate(0, 180)">
+      <text x="0" y="0" class="header">CORE.LANG</text>
+    </g>
+    <g transform="translate(0, 203)">
+      <text x="0" y="0" class="row-label">Python</text>
+      <text x="120" y="0" class="row-value">TypeScript, Go, Rust</text>
+    </g>
+    <g transform="translate(0, 238)">
+      <text x="0" y="0" class="header">CORE.FRONTEND</text>
+    </g>
+    <g transform="translate(0, 261)">
+      <text x="0" y="0" class="row-label">React</text>
+      <text x="120" y="0" class="row-value">Next.js, Tailwind CSS</text>
+    </g>
+    <g transform="translate(0, 296)">
+      <text x="0" y="0" class="header">CORE.BACKEND</text>
+    </g>
+    <g transform="translate(0, 319)">
+      <text x="0" y="0" class="row-label">FastAPI</text>
+      <text x="120" y="0" class="row-value">Node.js, gRPC</text>
+    </g>
+    <g transform="translate(0, 354)">
+      <text x="0" y="0" class="header">CORE.DATABASE</text>
+    </g>
+    <g transform="translate(0, 377)">
+      <text x="0" y="0" class="row-label">PostgreSQL</text>
+      <text x="120" y="0" class="row-value">Redis, MongoDB</text>
+    </g>
+    <g transform="translate(0, 412)">
+      <text x="0" y="0" class="header">CORE.INFRA</text>
+    </g>
+    <g transform="translate(0, 435)">
+      <text x="0" y="0" class="row-label">Docker</text>
+      <text x="120" y="0" class="row-value">Kubernetes, AWS, Terraform, GitHub Actions</text>
+    </g>
+    <g transform="translate(0, 482)">
+      <text x="0" y="0" class="header">GRID.CONNECT</text>
+    </g>
+    <g transform="translate(0, 505)">
+      <text x="0" y="0" class="row-label">Mail</text>
+      <text x="120" y="0" class="row-value">vamsikrishna@example.com</text>
+    </g>
+    <g transform="translate(0, 528)">
+      <text x="0" y="0" class="row-label">Portfolio</text>
+      <text x="120" y="0" class="row-value">coming soon</text>
+    </g>
+    <g transform="translate(0, 551)">
+      <text x="0" y="0" class="row-label">LinkedIn</text>
+      <text x="120" y="0" class="row-value">m-vamsi-krishna-l190030952</text>
+    </g>
+    <g transform="translate(0, 574)">
+      <text x="0" y="0" class="row-label">GitHub</text>
+      <text x="120" y="0" class="row-value">Mylavamsikrishna123</text>
+    </g>
+  </g>
+</svg>
