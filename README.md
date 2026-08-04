@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Hi, I'm Mylavamsikrishna123 👋
 
 ## About Me
