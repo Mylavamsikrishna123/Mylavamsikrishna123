@@ -32,8 +32,11 @@
   
   <!-- Dithered portrait placeholder (animated dots) -->
   <g id="portrait-dots">
+    <!-- Simulated dithered portrait with animated fade-in -->
     <rect x="40" y="100" width="390" height="470" fill="none"/>
+    <!-- Representative dot pattern - in reality this would be 17k dots from Floyd-Steinberg dithering -->
     <g style="animation: fadeIn 3.2s ease-out forwards">
+      <!-- These dots simulate the dithered portrait -->
       <circle class="dot" cx="100" cy="180" r="1.5" style="animation-delay:0.1s"/>
       <circle class="dot" cx="105" cy="180" r="1.5" style="animation-delay:0.15s"/>
       <circle class="dot" cx="110" cy="180" r="1.5" style="animation-delay:0.2s"/>
@@ -46,6 +49,7 @@
       <circle class="dot" cx="105" cy="190" r="1.5" style="animation-delay:0.19s"/>
       <circle class="dot" cx="110" cy="190" r="1.5" style="animation-delay:0.24s"/>
       <circle class="dot" cx="115" cy="190" r="1.5" style="animation-delay:0.3s"/>
+      <!-- More dots would continue in a real implementation -->
     </g>
   </g>
   
@@ -61,6 +65,7 @@
   <g class="info-panel" transform="translate(470, 56)">
     <text x="0" y="0" class="header">SYSTEM.INFO</text>
     
+    <!-- Rows with dotted leaders -->
     <g transform="translate(0, 30)">
       <text x="0" y="0" class="row-label">Subject</text>
       <text x="120" y="0" class="row-value">M VAMSI KRISHNA</text>
@@ -124,18 +129,14 @@
       <text x="0" y="0" class="header">GRID.CONNECT</text>
     </g>
     <g transform="translate(0, 505)">
-      <text x="0" y="0" class="row-label">Mail</text>
-      <text x="120" y="0" class="row-value">vamsikrishna@example.com</text>
-    </g>
-    <g transform="translate(0, 528)">
       <text x="0" y="0" class="row-label">Portfolio</text>
       <text x="120" y="0" class="row-value">coming soon</text>
     </g>
-    <g transform="translate(0, 551)">
+    <g transform="translate(0, 528)">
       <text x="0" y="0" class="row-label">LinkedIn</text>
       <text x="120" y="0" class="row-value">m-vamsi-krishna-l190030952</text>
     </g>
-    <g transform="translate(0, 574)">
+    <g transform="translate(0, 551)">
       <text x="0" y="0" class="row-label">GitHub</text>
       <text x="120" y="0" class="row-value">Mylavamsikrishna123</text>
     </g>

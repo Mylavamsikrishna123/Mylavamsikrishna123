@@ -124,18 +124,14 @@
       <text x="0" y="0" class="header">GRID.CONNECT</text>
     </g>
     <g transform="translate(0, 505)">
-      <text x="0" y="0" class="row-label">Mail</text>
-      <text x="120" y="0" class="row-value">vamsikrishna@example.com</text>
-    </g>
-    <g transform="translate(0, 528)">
       <text x="0" y="0" class="row-label">Portfolio</text>
       <text x="120" y="0" class="row-value">coming soon</text>
     </g>
-    <g transform="translate(0, 551)">
+    <g transform="translate(0, 528)">
       <text x="0" y="0" class="row-label">LinkedIn</text>
       <text x="120" y="0" class="row-value">m-vamsi-krishna-l190030952</text>
     </g>
-    <g transform="translate(0, 574)">
+    <g transform="translate(0, 551)">
       <text x="0" y="0" class="row-label">GitHub</text>
       <text x="120" y="0" class="row-value">Mylavamsikrishna123</text>
     </g>
