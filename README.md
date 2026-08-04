@@ -13,14 +13,8 @@ Building scalable ML systems, optimizing inference pipelines, and automating AI/
 ### 🔧 Core Competencies
 | Category | Technologies |
 |----------|--------------|
-| **Languages** | Python, TypeScript, Go, Rust |
-| **ML/DL Frameworks** | PyTorch, TensorFlow, JAX, Hugging Face Transformers |
-| **Inference & Serving** | TensorRT, ONNX Runtime, vLLM, TGI, Triton Inference Server |
-| **Orchestration** | Kubernetes, Kubeflow, Argo Workflows, Airflow |
-| **Cloud & Infra** | AWS (SageMaker, EKS, Lambda), GCP (Vertex AI), Azure ML |
-| **MLOps** | MLflow, Weights & Biases, DVC, Feast, Evidently |
-| **Data & Compute** | Ray, Spark, Dask, Apache Arrow, Parquet |
-| **Observability** | Prometheus, Grafana, Datadog, OpenTelemetry |
+| **Languages** | Python |
+| **Cloud & Infra** | AWS |
 
 ### 📊 GitHub Stats
 <div align="center">
@@ -63,17 +57,11 @@ Building scalable ML systems, optimizing inference pipelines, and automating AI/
 - **Editor**: VS Code (with Copilot, Remote Containers, Python extensions)
 - **Version Control**: Git, GitHub CLI
 - **Containers**: Docker, Podman, BuildKit
-- **Local K8s**: kind, k3d, minikube
-- **Terminal**: WezTerm, zsh, tmux
 - **AI Assistants**: Hermes, Claude, Codex
 </details>
 
 <details>
 <summary>📚 Currently Exploring</summary>
 
-- GPU kernel optimization with Triton/CUDA
-- LLM inference optimization (speculative decoding, quantization)
-- Distributed training at scale (FSDP, DeepSpeed, YaFSDP)
-- ML compiler stacks (MLIR, TVM, XLA)
 - AI agent orchestration frameworks
 </details>
