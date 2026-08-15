@@ -1,0 +1,55 @@
+name: Regenerate Profile Cards
+
+on:
+  schedule:
+    # 03:15 UTC daily — refresh live metrics + timestamp in the header cards
+    - cron: "15 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/generate_profile.py"
+      - ".github/workflows/regenerate-profile.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: regenerate-profile
+  cancel-in-progress: true
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate dark/light cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_profile.py
+
+      - name: Detect changes
+        id: diff
+        run: |
+          git add dark.svg light.svg
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit refreshed cards
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: auto-regenerate profile cards [skip ci]"
+          git push

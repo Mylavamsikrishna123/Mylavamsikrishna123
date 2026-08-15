@@ -4,6 +4,7 @@
       @keyframes pulse { 0%,100% {opacity:1} 50% {opacity:0.3} }
       @keyframes blink { 0%,100% {opacity:1} 50% {opacity:0} }
       @keyframes fadeIn { from {opacity:0} to {opacity:1} }
+      @keyframes flow { to {stroke-dashoffset:-40} }
       .terminal-bg { fill: #0A101F; }
       .portrait-frame { fill: none; stroke: #22D3EE; stroke-width: 2; rx: 8; }
       .info-panel { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; }
@@ -12,133 +13,106 @@
       .row-value { fill: #F8FAFC; font-size: 14px; }
       .live-badge { fill: #EF4444; font-size: 12px; font-weight: 700; animation: pulse 1.5s ease-in-out infinite; }
       .handle-pill { fill: #10B981; font-size: 14px; font-weight: 600; }
-      .dot { fill: #A78BFA; }
-      .logo-traveller { fill: #22D3EE; }
+      .neural-edge { stroke: #22D3EE; stroke-width: 0.6; opacity: 0.5; stroke-dasharray: 4 4; animation: flow 2s linear infinite; }
+      .neural-node { fill: #10B981; }
+      .stat-val { fill: #A78BFA; font-size: 13px; font-weight: 600; }
+      .foot { fill: #94A3B8; font-size: 10px; }
     </style>
   </defs>
-  
-  <!-- Terminal background -->
   <rect class="terminal-bg" width="1180" height="610"/>
-  
-  <!-- Title bar -->
   <rect x="0" y="0" width="1180" height="36" fill="#161B2D"/>
   <text x="16" y="24" class="header">profile.sh --live</text>
   <circle cx="1140" cy="18" r="6" fill="#EF4444" class="live-badge" style="animation-delay:0s"/>
   <text x="1020" y="24" class="handle-pill" style="paint-order: stroke fill; stroke:#0A101F; stroke-width:3px">@Mylavamsikrishna123</text>
-  
-  <!-- Portrait frame (left ~38%) -->
   <rect x="20" y="56" width="430" height="534" class="portrait-frame"/>
-  <text x="40" y="84" class="header" style="fill:#22D3EE">VISUAL.MAP</text>
-  
-  <!-- Dithered portrait placeholder (animated dots) -->
-  <g id="portrait-dots">
-    <!-- Simulated dithered portrait with animated fade-in -->
-    <rect x="40" y="100" width="390" height="470" fill="none"/>
-    <!-- Representative dot pattern - in reality this would be 17k dots from Floyd-Steinberg dithering -->
-    <g style="animation: fadeIn 3.2s ease-out forwards">
-      <!-- These dots simulate the dithered portrait -->
-      <circle class="dot" cx="100" cy="180" r="1.5" style="animation-delay:0.1s"/>
-      <circle class="dot" cx="105" cy="180" r="1.5" style="animation-delay:0.15s"/>
-      <circle class="dot" cx="110" cy="180" r="1.5" style="animation-delay:0.2s"/>
-      <circle class="dot" cx="115" cy="180" r="1.5" style="animation-delay:0.25s"/>
-      <circle class="dot" cx="100" cy="185" r="1.5" style="animation-delay:0.12s"/>
-      <circle class="dot" cx="105" cy="185" r="1.5" style="animation-delay:0.18s"/>
-      <circle class="dot" cx="110" cy="185" r="1.5" style="animation-delay:0.22s"/>
-      <circle class="dot" cx="115" cy="185" r="1.5" style="animation-delay:0.28s"/>
-      <circle class="dot" cx="100" cy="190" r="1.5" style="animation-delay:0.14s"/>
-      <circle class="dot" cx="105" cy="190" r="1.5" style="animation-delay:0.19s"/>
-      <circle class="dot" cx="110" cy="190" r="1.5" style="animation-delay:0.24s"/>
-      <circle class="dot" cx="115" cy="190" r="1.5" style="animation-delay:0.3s"/>
-      <!-- More dots would continue in a real implementation -->
-    </g>
+  <text x="40" y="84" class="header" style="fill:#22D3EE">NEURAL.MAP</text>
+  <g id="neural-map" style="animation: fadeIn 1.6s ease-out forwards">
+    <line class="neural-edge" x1="77.8" y1="367.5" x2="150.8" y2="416.3" style="animation-delay:0.2s"/>
+    <line class="neural-edge" x1="77.8" y1="367.5" x2="153.8" y2="213.2" style="animation-delay:0.35s"/>
+    <line class="neural-edge" x1="83.0" y1="383.8" x2="165.5" y2="120.2" style="animation-delay:0.5s"/>
+    <line class="neural-edge" x1="83.0" y1="383.8" x2="153.8" y2="213.2" style="animation-delay:0.6499999999999999s"/>
+    <line class="neural-edge" x1="86.2" y1="343.0" x2="149.0" y2="483.7" style="animation-delay:0.8s"/>
+    <line class="neural-edge" x1="86.2" y1="343.0" x2="153.8" y2="213.2" style="animation-delay:0.95s"/>
+    <line class="neural-edge" x1="87.2" y1="364.8" x2="149.0" y2="483.7" style="animation-delay:0.2s"/>
+    <line class="neural-edge" x1="87.2" y1="364.8" x2="165.5" y2="120.2" style="animation-delay:0.35s"/>
+    <line class="neural-edge" x1="74.6" y1="447.1" x2="153.8" y2="213.2" style="animation-delay:0.5s"/>
+    <line class="neural-edge" x1="74.6" y1="447.1" x2="156.3" y2="351.0" style="animation-delay:0.6499999999999999s"/>
+    <line class="neural-edge" x1="165.5" y1="120.2" x2="239.6" y2="336.3" style="animation-delay:0.8s"/>
+    <line class="neural-edge" x1="165.5" y1="120.2" x2="239.6" y2="336.3" style="animation-delay:0.95s"/>
+    <line class="neural-edge" x1="153.8" y1="213.2" x2="243.6" y2="3.4" style="animation-delay:0.2s"/>
+    <line class="neural-edge" x1="153.8" y1="213.2" x2="235.2" y2="347.6" style="animation-delay:0.35s"/>
+    <line class="neural-edge" x1="149.0" y1="483.7" x2="235.2" y2="347.6" style="animation-delay:0.5s"/>
+    <line class="neural-edge" x1="149.0" y1="483.7" x2="239.6" y2="336.3" style="animation-delay:0.6499999999999999s"/>
+    <line class="neural-edge" x1="156.3" y1="351.0" x2="227.1" y2="322.3" style="animation-delay:0.8s"/>
+    <line class="neural-edge" x1="156.3" y1="351.0" x2="239.6" y2="336.3" style="animation-delay:0.95s"/>
+    <line class="neural-edge" x1="150.8" y1="416.3" x2="236.7" y2="512.8" style="animation-delay:0.2s"/>
+    <line class="neural-edge" x1="150.8" y1="416.3" x2="239.6" y2="336.3" style="animation-delay:0.35s"/>
+    <line class="neural-edge" x1="243.6" y1="3.4" x2="319.3" y2="100.2" style="animation-delay:0.5s"/>
+    <line class="neural-edge" x1="243.6" y1="3.4" x2="319.3" y2="100.2" style="animation-delay:0.6499999999999999s"/>
+    <line class="neural-edge" x1="227.1" y1="322.3" x2="321.3" y2="262.5" style="animation-delay:0.8s"/>
+    <line class="neural-edge" x1="227.1" y1="322.3" x2="317.1" y2="204.5" style="animation-delay:0.95s"/>
+    <line class="neural-edge" x1="235.2" y1="347.6" x2="308.1" y2="635.6" style="animation-delay:0.2s"/>
+    <line class="neural-edge" x1="235.2" y1="347.6" x2="315.3" y2="328.3" style="animation-delay:0.35s"/>
+    <line class="neural-edge" x1="236.7" y1="512.8" x2="317.1" y2="204.5" style="animation-delay:0.5s"/>
+    <line class="neural-edge" x1="236.7" y1="512.8" x2="315.3" y2="328.3" style="animation-delay:0.6499999999999999s"/>
+    <line class="neural-edge" x1="239.6" y1="336.3" x2="321.3" y2="262.5" style="animation-delay:0.8s"/>
+    <line class="neural-edge" x1="239.6" y1="336.3" x2="321.3" y2="262.5" style="animation-delay:0.95s"/>
+    <line class="neural-edge" x1="319.3" y1="100.2" x2="395.8" y2="337.2" style="animation-delay:0.2s"/>
+    <line class="neural-edge" x1="319.3" y1="100.2" x2="382.8" y2="432.3" style="animation-delay:0.35s"/>
+    <line class="neural-edge" x1="317.1" y1="204.5" x2="388.1" y2="192.1" style="animation-delay:0.5s"/>
+    <line class="neural-edge" x1="317.1" y1="204.5" x2="397.8" y2="265.4" style="animation-delay:0.6499999999999999s"/>
+    <line class="neural-edge" x1="321.3" y1="262.5" x2="388.1" y2="192.1" style="animation-delay:0.8s"/>
+    <line class="neural-edge" x1="321.3" y1="262.5" x2="397.8" y2="265.4" style="animation-delay:0.95s"/>
+    <line class="neural-edge" x1="315.3" y1="328.3" x2="388.1" y2="192.1" style="animation-delay:0.2s"/>
+    <line class="neural-edge" x1="315.3" y1="328.3" x2="388.1" y2="192.1" style="animation-delay:0.35s"/>
+    <line class="neural-edge" x1="308.1" y1="635.6" x2="387.1" y2="657.6" style="animation-delay:0.5s"/>
+    <line class="neural-edge" x1="308.1" y1="635.6" x2="388.1" y2="192.1" style="animation-delay:0.6499999999999999s"/>
+    <circle class="neural-node" cx="77.8" cy="367.5" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.4s"/>
+    <circle class="neural-node" cx="83.0" cy="383.8" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.52s"/>
+    <circle class="neural-node" cx="86.2" cy="343.0" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.64s"/>
+    <circle class="neural-node" cx="87.2" cy="364.8" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.76s"/>
+    <circle class="neural-node" cx="74.6" cy="447.1" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.88s"/>
+    <circle class="neural-node" cx="165.5" cy="120.2" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.0s"/>
+    <circle class="neural-node" cx="153.8" cy="213.2" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.12s"/>
+    <circle class="neural-node" cx="149.0" cy="483.7" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.24s"/>
+    <circle class="neural-node" cx="156.3" cy="351.0" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.4s"/>
+    <circle class="neural-node" cx="150.8" cy="416.3" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.52s"/>
+    <circle class="neural-node" cx="243.6" cy="3.4" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.64s"/>
+    <circle class="neural-node" cx="227.1" cy="322.3" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.76s"/>
+    <circle class="neural-node" cx="235.2" cy="347.6" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.88s"/>
+    <circle class="neural-node" cx="236.7" cy="512.8" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.0s"/>
+    <circle class="neural-node" cx="239.6" cy="336.3" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.12s"/>
+    <circle class="neural-node" cx="319.3" cy="100.2" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.24s"/>
+    <circle class="neural-node" cx="317.1" cy="204.5" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.4s"/>
+    <circle class="neural-node" cx="321.3" cy="262.5" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.52s"/>
+    <circle class="neural-node" cx="315.3" cy="328.3" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.64s"/>
+    <circle class="neural-node" cx="308.1" cy="635.6" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.76s"/>
+    <circle class="neural-node" cx="395.8" cy="337.2" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.88s"/>
+    <circle class="neural-node" cx="388.1" cy="192.1" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.0s"/>
+    <circle class="neural-node" cx="382.8" cy="432.3" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.12s"/>
+    <circle class="neural-node" cx="397.8" cy="265.4" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.24s"/>
+    <circle class="neural-node" cx="387.1" cy="657.6" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.4s"/>
   </g>
-  
-  <!-- Logo travellers layer (morphing between PyTorch, Neural net, Cloud) -->
-  <g id="logo-travellers" style="opacity:0; animation: fadeIn 2s 3.5s forwards">
-    <text x="235" y="350" class="logo-traveller" font-size="48" text-anchor="middle" style="font-family: 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;">🔥</text>
-    <animate attributeName="opacity" values="0;0;0;1;1;1;0" dur="14.2s" repeatCount="indefinite" keyTimes="0;0.21;0.35;0.5;0.64;0.79;1"/>
-    <animate attributeName="x" values="235;200;165;130;165;200;235" dur="14.2s" repeatCount="indefinite" keyTimes="0;0.21;0.35;0.5;0.64;0.79;1"/>
-    <animate attributeName="y" values="350;320;290;260;290;320;350" dur="14.2s" repeatCount="indefinite" keyTimes="0;0.21;0.35;0.5;0.64;0.79;1"/>
-  </g>
-  
-  <!-- Info panel (right side) -->
   <g class="info-panel" transform="translate(470, 56)">
-    <text x="0" y="0" class="header">SYSTEM.INFO</text>
-    
-    <!-- Rows with dotted leaders -->
-    <g transform="translate(0, 30)">
-      <text x="0" y="0" class="row-label">Subject</text>
-      <text x="120" y="0" class="row-value">M VAMSI KRISHNA</text>
-    </g>
-    <g transform="translate(0, 53)">
-      <text x="0" y="0" class="row-label">Role</text>
-      <text x="120" y="0" class="row-value">AI Infrastructure Engineer</text>
-    </g>
-    <g transform="translate(0, 76)">
-      <text x="0" y="0" class="row-label">Origin</text>
-      <text x="120" y="0" class="row-value">India</text>
-    </g>
-    <g transform="translate(0, 99)">
-      <text x="0" y="0" class="row-label">Education</text>
-      <text x="120" y="0" class="row-value">M.Tech</text>
-    </g>
-    <g transform="translate(0, 122)">
-      <text x="0" y="0" class="row-label">Status</text>
-      <text x="120" y="0" class="row-value">Building + Learning + Shipping</text>
-    </g>
-    <g transform="translate(0, 145)">
-      <text x="0" y="0" class="row-label">ToolChain</text>
-      <text x="120" y="0" class="row-value">VS Code, Git, Docker</text>
-    </g>
-    <g transform="translate(0, 180)">
-      <text x="0" y="0" class="header">CORE.LANG</text>
-    </g>
-    <g transform="translate(0, 203)">
-      <text x="0" y="0" class="row-label">Python</text>
-      <text x="120" y="0" class="row-value">TypeScript, Go, Rust</text>
-    </g>
-    <g transform="translate(0, 238)">
-      <text x="0" y="0" class="header">CORE.FRONTEND</text>
-    </g>
-    <g transform="translate(0, 261)">
-      <text x="0" y="0" class="row-label">React</text>
-      <text x="120" y="0" class="row-value">Next.js, Tailwind CSS</text>
-    </g>
-    <g transform="translate(0, 296)">
-      <text x="0" y="0" class="header">CORE.BACKEND</text>
-    </g>
-    <g transform="translate(0, 319)">
-      <text x="0" y="0" class="row-label">FastAPI</text>
-      <text x="120" y="0" class="row-value">Node.js, gRPC</text>
-    </g>
-    <g transform="translate(0, 354)">
-      <text x="0" y="0" class="header">CORE.DATABASE</text>
-    </g>
-    <g transform="translate(0, 377)">
-      <text x="0" y="0" class="row-label">PostgreSQL</text>
-      <text x="120" y="0" class="row-value">Redis, MongoDB</text>
-    </g>
-    <g transform="translate(0, 412)">
-      <text x="0" y="0" class="header">CORE.INFRA</text>
-    </g>
-    <g transform="translate(0, 435)">
-      <text x="0" y="0" class="row-label">Docker</text>
-      <text x="120" y="0" class="row-value">Kubernetes, AWS, Terraform, GitHub Actions</text>
-    </g>
-    <g transform="translate(0, 482)">
-      <text x="0" y="0" class="header">GRID.CONNECT</text>
-    </g>
-    <g transform="translate(0, 505)">
-      <text x="0" y="0" class="row-label">Portfolio</text>
-      <text x="120" y="0" class="row-value">coming soon</text>
-    </g>
-    <g transform="translate(0, 528)">
-      <text x="0" y="0" class="row-label">LinkedIn</text>
-      <text x="120" y="0" class="row-value">m-vamsi-krishna-l190030952</text>
-    </g>
-    <g transform="translate(0, 551)">
-      <text x="0" y="0" class="row-label">GitHub</text>
-      <text x="120" y="0" class="row-value">Mylavamsikrishna123</text>
-    </g>
+    <g transform="translate(0, 0)"><text x="0" y="0" class="header">SYSTEM.INFO</text></g>
+    <g transform="translate(0, 23)"><text x="0" y="0" class="row-label">Subject</text><text x="120" y="0" class="row-value">M VAMSI KRISHNA</text></g>
+    <g transform="translate(0, 46)"><text x="0" y="0" class="row-label">Role</text><text x="120" y="0" class="row-value">AI Infrastructure Engineer</text></g>
+    <g transform="translate(0, 69)"><text x="0" y="0" class="row-label">Origin</text><text x="120" y="0" class="row-value">India</text></g>
+    <g transform="translate(0, 92)"><text x="0" y="0" class="row-label">Education</text><text x="120" y="0" class="row-value">M.Tech</text></g>
+    <g transform="translate(0, 115)"><text x="0" y="0" class="row-label">Status</text><text x="120" y="0" class="row-value">Building + Learning + Shipping</text></g>
+    <g transform="translate(0, 138)"><text x="0" y="0" class="row-label">ToolChain</text><text x="120" y="0" class="row-value">VS Code, Git, Docker</text></g>
+    <g transform="translate(0, 161)"><text x="0" y="0" class="row-label">CORE.LANG</text><text x="120" y="0" class="row-value">TypeScript, Go, Rust</text></g>
+    <g transform="translate(0, 184)"><text x="0" y="0" class="row-label">CORE.FRONTEND</text><text x="120" y="0" class="row-value">Next.js, Tailwind CSS</text></g>
+    <g transform="translate(0, 207)"><text x="0" y="0" class="row-label">CORE.BACKEND</text><text x="120" y="0" class="row-value">Node.js, gRPC</text></g>
+    <g transform="translate(0, 230)"><text x="0" y="0" class="row-label">CORE.DATABASE</text><text x="120" y="0" class="row-value">Redis, MongoDB</text></g>
+    <g transform="translate(0, 253)"><text x="0" y="0" class="row-label">CORE.INFRA</text><text x="120" y="0" class="row-value">Kubernetes, AWS, Terraform, GitHub Actions</text></g>
+    <g transform="translate(0, 276)"><text x="0" y="0" class="header">GRID.CONNECT</text></g>
+    <g transform="translate(0, 299)"><text x="0" y="0" class="row-label">LinkedIn</text><text x="120" y="0" class="row-value">m-vamsi-krishna-l190030952</text></g>
+    <g transform="translate(0, 322)"><text x="0" y="0" class="row-label">GitHub</text><text x="120" y="0" class="row-value">Mylavamsikrishna123</text></g>
+    <g transform="translate(0, 359)"><text x="0" y="0" class="header">LIVE.METRICS</text></g>
+    <g transform="translate(0, 382)"><text x="0" y="0" class="row-label">PublicRepos</text><text x="120" y="0" class="stat-val">2</text></g>
+    <g transform="translate(0, 403)"><text x="0" y="0" class="row-label">Followers</text><text x="120" y="0" class="stat-val">2</text></g>
+    <g transform="translate(0, 424)"><text x="0" y="0" class="row-label">LastPush</text><text x="120" y="0" class="stat-val">—</text></g>
+    <g transform="translate(0, 451)"><text x="0" y="0" class="foot">● live · generated 2026-08-15 11:42 UTC</text></g>
   </g>
 </svg>
