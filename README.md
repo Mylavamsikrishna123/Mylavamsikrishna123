@@ -13,8 +13,14 @@ Building scalable ML systems, optimizing inference pipelines, and automating AI/
 ### 🔧 Core Competencies
 | Category | Technologies |
 |----------|--------------|
-| **Languages** | Python |
-| **Cloud & Infra** | AWS |
+| **Languages** | Python, TypeScript, Go, Rust |
+| **Frontend** | React, Next.js, Tailwind CSS |
+| **Backend** | FastAPI, Node.js, gRPC |
+| **Database** | PostgreSQL, Redis, MongoDB |
+| **Cloud & Infra** | AWS, Kubernetes, Docker, Terraform, GitHub Actions |
+
+> The header card above is **auto-generated** by `scripts/generate_profile.py` and
+> self-updates daily with live GitHub metrics via `.github/workflows/regenerate-profile.yml`.
 
 ### 📊 GitHub Stats
 <div align="center">
@@ -41,11 +47,11 @@ Building scalable ML systems, optimizing inference pipelines, and automating AI/
   <a href="https://www.instagram.com/hipoet212/">
     <img src="https://img.shields.io/badge/Instagram-0A101F?style=for-the-badge&logo=instagram&logoColor=A78BFA&labelColor=0A101F" alt="Instagram" />
   </a>&nbsp;&nbsp;
-  <a href="mailto:vamsikrishna@example.com">
-    <img src="https://img.shields.io/badge/Email-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
-  </a>&nbsp;&nbsp;
   <a href="https://github.com/Mylavamsikrishna123">
     <img src="https://img.shields.io/badge/GitHub-0A101F?style=for-the-badge&logo=github&logoColor=F8FAFC&labelColor=0A101F" alt="GitHub" />
+  </a>&nbsp;&nbsp;
+  <a href="https://github.com/Mylavamsikrishna123/Mylavamsikrishna123/actions/workflows/regenerate-profile.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/Mylavamsikrishna123/Mylavamsikrishna123/regenerate-profile.yml?style=for-the-badge&label=Profile%20Card%20Live&logo=githubactions&logoColor=white" alt="Profile card automation status" />
   </a>
 </div>
 
@@ -63,5 +69,7 @@ Building scalable ML systems, optimizing inference pipelines, and automating AI/
 <details>
 <summary>📚 Currently Exploring</summary>
 
-- AI agent orchestration frameworks
+- AI agent orchestration frameworks (multi-agent + tool-use pipelines)
+- LLM inference optimization (vLLM, speculative decoding, quantization)
+- Self-updating profile automation (this README's cards regenerate daily via CI)
 </details>
