@@ -5,6 +5,7 @@
       @keyframes blink { 0%,100% {opacity:1} 50% {opacity:0} }
       @keyframes fadeIn { from {opacity:0} to {opacity:1} }
       @keyframes flow { to {stroke-dashoffset:-40} }
+      @keyframes draw { from {stroke-dashoffset:400} to {stroke-dashoffset:0} }
       .terminal-bg { fill: #F8FAFC; }
       .portrait-frame { fill: none; stroke: #0891B2; stroke-width: 2; rx: 8; }
       .info-panel { font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace; }
@@ -15,7 +16,12 @@
       .handle-pill { fill: #059669; font-size: 14px; font-weight: 600; }
       .neural-edge { stroke: #0891B2; stroke-width: 0.6; opacity: 0.5; stroke-dasharray: 4 4; animation: flow 2s linear infinite; }
       .neural-node { fill: #059669; }
+      .repo-node { stroke: #F8FAFC; stroke-width: 1.2; }
+      .repo-link { stroke: #0891B2; stroke-width: 0.7; opacity: 0.35; }
+      .repo-label { fill: #0F172A; font-size: 9px; font-family: 'JetBrains Mono', monospace; }
       .stat-val { fill: #6D28D9; font-size: 13px; font-weight: 600; }
+      .spark { fill: none; stroke: #6D28D9; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; animation: draw 2s ease-out forwards; stroke-dasharray: 400; }
+      .spark-fill { fill: #6D28D9; opacity: 0.12; }
       .foot { fill: #475569; font-size: 10px; }
     </style>
   </defs>
@@ -25,73 +31,15 @@
   <circle cx="1140" cy="18" r="6" fill="#EF4444" class="live-badge" style="animation-delay:0s"/>
   <text x="1020" y="24" class="handle-pill" style="paint-order: stroke fill; stroke:#F8FAFC; stroke-width:3px">@Mylavamsikrishna123</text>
   <rect x="20" y="56" width="430" height="534" class="portrait-frame"/>
-  <text x="40" y="84" class="header" style="fill:#0891B2">NEURAL.MAP</text>
-  <g id="neural-map" style="animation: fadeIn 1.6s ease-out forwards">
-    <line class="neural-edge" x1="77.8" y1="367.5" x2="150.8" y2="416.3" style="animation-delay:0.2s"/>
-    <line class="neural-edge" x1="77.8" y1="367.5" x2="153.8" y2="213.2" style="animation-delay:0.35s"/>
-    <line class="neural-edge" x1="83.0" y1="383.8" x2="165.5" y2="120.2" style="animation-delay:0.5s"/>
-    <line class="neural-edge" x1="83.0" y1="383.8" x2="153.8" y2="213.2" style="animation-delay:0.6499999999999999s"/>
-    <line class="neural-edge" x1="86.2" y1="343.0" x2="149.0" y2="483.7" style="animation-delay:0.8s"/>
-    <line class="neural-edge" x1="86.2" y1="343.0" x2="153.8" y2="213.2" style="animation-delay:0.95s"/>
-    <line class="neural-edge" x1="87.2" y1="364.8" x2="149.0" y2="483.7" style="animation-delay:0.2s"/>
-    <line class="neural-edge" x1="87.2" y1="364.8" x2="165.5" y2="120.2" style="animation-delay:0.35s"/>
-    <line class="neural-edge" x1="74.6" y1="447.1" x2="153.8" y2="213.2" style="animation-delay:0.5s"/>
-    <line class="neural-edge" x1="74.6" y1="447.1" x2="156.3" y2="351.0" style="animation-delay:0.6499999999999999s"/>
-    <line class="neural-edge" x1="165.5" y1="120.2" x2="239.6" y2="336.3" style="animation-delay:0.8s"/>
-    <line class="neural-edge" x1="165.5" y1="120.2" x2="239.6" y2="336.3" style="animation-delay:0.95s"/>
-    <line class="neural-edge" x1="153.8" y1="213.2" x2="243.6" y2="3.4" style="animation-delay:0.2s"/>
-    <line class="neural-edge" x1="153.8" y1="213.2" x2="235.2" y2="347.6" style="animation-delay:0.35s"/>
-    <line class="neural-edge" x1="149.0" y1="483.7" x2="235.2" y2="347.6" style="animation-delay:0.5s"/>
-    <line class="neural-edge" x1="149.0" y1="483.7" x2="239.6" y2="336.3" style="animation-delay:0.6499999999999999s"/>
-    <line class="neural-edge" x1="156.3" y1="351.0" x2="227.1" y2="322.3" style="animation-delay:0.8s"/>
-    <line class="neural-edge" x1="156.3" y1="351.0" x2="239.6" y2="336.3" style="animation-delay:0.95s"/>
-    <line class="neural-edge" x1="150.8" y1="416.3" x2="236.7" y2="512.8" style="animation-delay:0.2s"/>
-    <line class="neural-edge" x1="150.8" y1="416.3" x2="239.6" y2="336.3" style="animation-delay:0.35s"/>
-    <line class="neural-edge" x1="243.6" y1="3.4" x2="319.3" y2="100.2" style="animation-delay:0.5s"/>
-    <line class="neural-edge" x1="243.6" y1="3.4" x2="319.3" y2="100.2" style="animation-delay:0.6499999999999999s"/>
-    <line class="neural-edge" x1="227.1" y1="322.3" x2="321.3" y2="262.5" style="animation-delay:0.8s"/>
-    <line class="neural-edge" x1="227.1" y1="322.3" x2="317.1" y2="204.5" style="animation-delay:0.95s"/>
-    <line class="neural-edge" x1="235.2" y1="347.6" x2="308.1" y2="635.6" style="animation-delay:0.2s"/>
-    <line class="neural-edge" x1="235.2" y1="347.6" x2="315.3" y2="328.3" style="animation-delay:0.35s"/>
-    <line class="neural-edge" x1="236.7" y1="512.8" x2="317.1" y2="204.5" style="animation-delay:0.5s"/>
-    <line class="neural-edge" x1="236.7" y1="512.8" x2="315.3" y2="328.3" style="animation-delay:0.6499999999999999s"/>
-    <line class="neural-edge" x1="239.6" y1="336.3" x2="321.3" y2="262.5" style="animation-delay:0.8s"/>
-    <line class="neural-edge" x1="239.6" y1="336.3" x2="321.3" y2="262.5" style="animation-delay:0.95s"/>
-    <line class="neural-edge" x1="319.3" y1="100.2" x2="395.8" y2="337.2" style="animation-delay:0.2s"/>
-    <line class="neural-edge" x1="319.3" y1="100.2" x2="382.8" y2="432.3" style="animation-delay:0.35s"/>
-    <line class="neural-edge" x1="317.1" y1="204.5" x2="388.1" y2="192.1" style="animation-delay:0.5s"/>
-    <line class="neural-edge" x1="317.1" y1="204.5" x2="397.8" y2="265.4" style="animation-delay:0.6499999999999999s"/>
-    <line class="neural-edge" x1="321.3" y1="262.5" x2="388.1" y2="192.1" style="animation-delay:0.8s"/>
-    <line class="neural-edge" x1="321.3" y1="262.5" x2="397.8" y2="265.4" style="animation-delay:0.95s"/>
-    <line class="neural-edge" x1="315.3" y1="328.3" x2="388.1" y2="192.1" style="animation-delay:0.2s"/>
-    <line class="neural-edge" x1="315.3" y1="328.3" x2="388.1" y2="192.1" style="animation-delay:0.35s"/>
-    <line class="neural-edge" x1="308.1" y1="635.6" x2="387.1" y2="657.6" style="animation-delay:0.5s"/>
-    <line class="neural-edge" x1="308.1" y1="635.6" x2="388.1" y2="192.1" style="animation-delay:0.6499999999999999s"/>
-    <circle class="neural-node" cx="77.8" cy="367.5" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.4s"/>
-    <circle class="neural-node" cx="83.0" cy="383.8" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.52s"/>
-    <circle class="neural-node" cx="86.2" cy="343.0" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.64s"/>
-    <circle class="neural-node" cx="87.2" cy="364.8" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.76s"/>
-    <circle class="neural-node" cx="74.6" cy="447.1" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.88s"/>
-    <circle class="neural-node" cx="165.5" cy="120.2" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.0s"/>
-    <circle class="neural-node" cx="153.8" cy="213.2" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.12s"/>
-    <circle class="neural-node" cx="149.0" cy="483.7" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.24s"/>
-    <circle class="neural-node" cx="156.3" cy="351.0" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.4s"/>
-    <circle class="neural-node" cx="150.8" cy="416.3" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.52s"/>
-    <circle class="neural-node" cx="243.6" cy="3.4" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.64s"/>
-    <circle class="neural-node" cx="227.1" cy="322.3" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.76s"/>
-    <circle class="neural-node" cx="235.2" cy="347.6" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.88s"/>
-    <circle class="neural-node" cx="236.7" cy="512.8" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.0s"/>
-    <circle class="neural-node" cx="239.6" cy="336.3" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.12s"/>
-    <circle class="neural-node" cx="319.3" cy="100.2" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.24s"/>
-    <circle class="neural-node" cx="317.1" cy="204.5" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.4s"/>
-    <circle class="neural-node" cx="321.3" cy="262.5" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.52s"/>
-    <circle class="neural-node" cx="315.3" cy="328.3" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.64s"/>
-    <circle class="neural-node" cx="308.1" cy="635.6" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.76s"/>
-    <circle class="neural-node" cx="395.8" cy="337.2" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.88s"/>
-    <circle class="neural-node" cx="388.1" cy="192.1" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.0s"/>
-    <circle class="neural-node" cx="382.8" cy="432.3" r="2.6" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.12s"/>
-    <circle class="neural-node" cx="397.8" cy="265.4" r="3.2" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:1.24s"/>
-    <circle class="neural-node" cx="387.1" cy="657.6" r="2.0" style="animation: pulse 2.4s ease-in-out infinite; animation-delay:0.4s"/>
+  <text x="40" y="84" class="header" style="fill:#0891B2">REPO.MAP</text>
+  <g id="repo-map" style="animation: fadeIn 1.6s ease-out forwards">
+    <line class="repo-link" x1="235.0" y1="186.0" x2="235.0" y2="520.0"/>
+    <line class="repo-link" x1="235.0" y1="520.0" x2="235.0" y2="186.0"/>
+    <circle class="repo-node" cx="235.0" cy="186.0" r="5.0" fill="#3572A5" style="animation: pulse 2.8s ease-in-out infinite; animation-delay:0.3s"/>
+    <text class="repo-label" x="235.0" y="178.0" text-anchor="middle">Mylavamsikrishna123</text>
+    <circle class="repo-node" cx="235.0" cy="520.0" r="5.0" fill="#b07219" style="animation: pulse 2.8s ease-in-out infinite; animation-delay:0.4s"/>
+    <text class="repo-label" x="235.0" y="512.0" text-anchor="middle">Student-placement-prediction</text>
+    <text class="repo-label" x="235" y="572" text-anchor="middle">Java · Python</text>
   </g>
   <g class="info-panel" transform="translate(470, 56)">
     <g transform="translate(0, 0)"><text x="0" y="0" class="header">SYSTEM.INFO</text></g>
@@ -111,8 +59,11 @@
     <g transform="translate(0, 322)"><text x="0" y="0" class="row-label">GitHub</text><text x="120" y="0" class="row-value">Mylavamsikrishna123</text></g>
     <g transform="translate(0, 359)"><text x="0" y="0" class="header">LIVE.METRICS</text></g>
     <g transform="translate(0, 382)"><text x="0" y="0" class="row-label">PublicRepos</text><text x="120" y="0" class="stat-val">2</text></g>
-    <g transform="translate(0, 403)"><text x="0" y="0" class="row-label">Followers</text><text x="120" y="0" class="stat-val">2</text></g>
-    <g transform="translate(0, 424)"><text x="0" y="0" class="row-label">LastPush</text><text x="120" y="0" class="stat-val">—</text></g>
-    <g transform="translate(0, 451)"><text x="0" y="0" class="foot">● live · generated 2026-08-15 12:15 UTC</text></g>
+    <g transform="translate(0, 403)"><text x="0" y="0" class="row-label">TotalStars</text><text x="120" y="0" class="stat-val">0</text></g>
+    <g transform="translate(0, 424)"><text x="0" y="0" class="row-label">Followers</text><text x="120" y="0" class="stat-val">2</text></g>
+    <g transform="translate(0, 445)"><text x="0" y="0" class="row-label">LastPush</text><text x="120" y="0" class="stat-val">2026-08-15</text></g>
+    <g transform="translate(0, 474)"><text x="0" y="0" class="header">GROWTH</text></g>
+    <text x="0" y="492" class="foot">collecting trajectory… (needs 2+ runs)</text>
+    <g transform="translate(0, 508)"><text x="0" y="0" class="foot">● live · generated 2026-08-15 12:32 UTC</text></g>
   </g>
 </svg>
