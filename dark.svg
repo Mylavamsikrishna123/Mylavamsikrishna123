@@ -63,7 +63,10 @@
     <g transform="translate(0, 424)"><text x="0" y="0" class="row-label">Followers</text><text x="120" y="0" class="stat-val">2</text></g>
     <g transform="translate(0, 445)"><text x="0" y="0" class="row-label">LastPush</text><text x="120" y="0" class="stat-val">2026-08-15</text></g>
     <g transform="translate(0, 474)"><text x="0" y="0" class="header">GROWTH</text></g>
-    <text x="0" y="492" class="foot">collecting trajectory… (needs 2+ runs)</text>
-    <g transform="translate(0, 508)"><text x="0" y="0" class="foot">● live · generated 2026-08-15 12:32 UTC</text></g>
+    <polygon class="spark-fill" points="120.0,494 120.0,494.0 370.0,494.0 370.0,494"/>
+    <polyline class="spark" points="120.0,494.0 370.0,494.0"/>
+    <text x="378" y="492" class="stat-val">2</text>
+    <text x="0" y="492" class="foot">2d · followers</text>
+    <g transform="translate(0, 508)"><text x="0" y="0" class="foot">● live · generated 2026-08-15 12:37 UTC</text></g>
   </g>
 </svg>
