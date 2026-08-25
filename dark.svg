@@ -64,12 +64,12 @@
     <g transform="translate(0, 382)"><text x="0" y="0" class="row-label">PublicRepos</text><text x="120" y="0" class="stat-val">3</text></g>
     <g transform="translate(0, 403)"><text x="0" y="0" class="row-label">TotalStars</text><text x="120" y="0" class="stat-val">0</text></g>
     <g transform="translate(0, 424)"><text x="0" y="0" class="row-label">Followers</text><text x="120" y="0" class="stat-val">2</text></g>
-    <g transform="translate(0, 445)"><text x="0" y="0" class="row-label">LastPush</text><text x="120" y="0" class="stat-val">2026-08-24</text></g>
+    <g transform="translate(0, 445)"><text x="0" y="0" class="row-label">LastPush</text><text x="120" y="0" class="stat-val">2026-08-25</text></g>
     <g transform="translate(0, 474)"><text x="0" y="0" class="header">GROWTH</text></g>
-    <polygon class="spark-fill" points="120.0,494 120.0,494.0 145.0,494.0 170.0,494.0 195.0,494.0 220.0,494.0 245.0,494.0 270.0,494.0 295.0,494.0 320.0,494.0 345.0,494.0 370.0,494.0 370.0,494"/>
-    <polyline class="spark" points="120.0,494.0 145.0,494.0 170.0,494.0 195.0,494.0 220.0,494.0 245.0,494.0 270.0,494.0 295.0,494.0 320.0,494.0 345.0,494.0 370.0,494.0"/>
+    <polygon class="spark-fill" points="120.0,494 120.0,494.0 142.7,494.0 165.5,494.0 188.2,494.0 210.9,494.0 233.6,494.0 256.4,494.0 279.1,494.0 301.8,494.0 324.5,494.0 347.3,494.0 370.0,494.0 370.0,494"/>
+    <polyline class="spark" points="120.0,494.0 142.7,494.0 165.5,494.0 188.2,494.0 210.9,494.0 233.6,494.0 256.4,494.0 279.1,494.0 301.8,494.0 324.5,494.0 347.3,494.0 370.0,494.0"/>
     <text x="378" y="492" class="stat-val">2</text>
-    <text x="0" y="492" class="foot">11d · followers</text>
-    <g transform="translate(0, 508)"><text x="0" y="0" class="foot">● live · generated 2026-08-24 04:04 UTC</text></g>
+    <text x="0" y="492" class="foot">12d · followers</text>
+    <g transform="translate(0, 508)"><text x="0" y="0" class="foot">● live · generated 2026-08-25 03:59 UTC</text></g>
   </g>
 </svg>
