@@ -64,12 +64,12 @@
     <g transform="translate(0, 382)"><text x="0" y="0" class="row-label">PublicRepos</text><text x="120" y="0" class="stat-val">3</text></g>
     <g transform="translate(0, 403)"><text x="0" y="0" class="row-label">TotalStars</text><text x="120" y="0" class="stat-val">0</text></g>
     <g transform="translate(0, 424)"><text x="0" y="0" class="row-label">Followers</text><text x="120" y="0" class="stat-val">2</text></g>
-    <g transform="translate(0, 445)"><text x="0" y="0" class="row-label">LastPush</text><text x="120" y="0" class="stat-val">2026-08-27</text></g>
+    <g transform="translate(0, 445)"><text x="0" y="0" class="row-label">LastPush</text><text x="120" y="0" class="stat-val">2026-08-28</text></g>
     <g transform="translate(0, 474)"><text x="0" y="0" class="header">GROWTH</text></g>
-    <polygon class="spark-fill" points="120.0,494 120.0,494.0 139.2,494.0 158.5,494.0 177.7,494.0 196.9,494.0 216.2,494.0 235.4,494.0 254.6,494.0 273.8,494.0 293.1,494.0 312.3,494.0 331.5,494.0 350.8,494.0 370.0,494.0 370.0,494"/>
-    <polyline class="spark" points="120.0,494.0 139.2,494.0 158.5,494.0 177.7,494.0 196.9,494.0 216.2,494.0 235.4,494.0 254.6,494.0 273.8,494.0 293.1,494.0 312.3,494.0 331.5,494.0 350.8,494.0 370.0,494.0"/>
+    <polygon class="spark-fill" points="120.0,494 120.0,494.0 137.9,494.0 155.7,494.0 173.6,494.0 191.4,494.0 209.3,494.0 227.1,494.0 245.0,494.0 262.9,494.0 280.7,494.0 298.6,494.0 316.4,494.0 334.3,494.0 352.1,494.0 370.0,494.0 370.0,494"/>
+    <polyline class="spark" points="120.0,494.0 137.9,494.0 155.7,494.0 173.6,494.0 191.4,494.0 209.3,494.0 227.1,494.0 245.0,494.0 262.9,494.0 280.7,494.0 298.6,494.0 316.4,494.0 334.3,494.0 352.1,494.0 370.0,494.0"/>
     <text x="378" y="492" class="stat-val">2</text>
-    <text x="0" y="492" class="foot">14d · followers</text>
-    <g transform="translate(0, 508)"><text x="0" y="0" class="foot">● live · generated 2026-08-27 14:11 UTC</text></g>
+    <text x="0" y="492" class="foot">15d · followers</text>
+    <g transform="translate(0, 508)"><text x="0" y="0" class="foot">● live · generated 2026-08-28 15:22 UTC</text></g>
   </g>
 </svg>
